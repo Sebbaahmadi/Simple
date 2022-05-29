@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+
+<div id="content" class="content">
+    <div class="container">
+        <div id="primary" class="content-area row">
+			            <div
+                    class="col-md-12">
+                    {% for x in post.all %}		
+                    
+                    <br>
+                    <br>
+<article id="post-923" class="post-923 page type-page status-publish hentry">
+    <div class="entry-content">
+		
+<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="false" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1489637781205 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="insight-team-member-2 row">
+   
+    <div class="col-md-6 member-image">
+		            <img src="/static/page/{{ x.cover }}" alt="{{ x.title }}"/>
+		    </div>
+    <div class="col-md-6 member-info">
+		            <h5 class="title nd-font pri-color">{{ x.date }}</h5>
+				            <h2 class="name nd-font">{{ x.title }}</h2>
+				            <p class="biography">{{ x.text  }}</p>
+						    </div>
+</div>
+</div></div></div></div>
+{% endfor %}
+
+<div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1480933029419 vc_row-has-fill"><div class="bg-center wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1489621478534"><div class="wpb_wrapper"><div class="insight-our-story">
+    <div class="title">
+        <div class="main-title">How can we help?</div>
+        
+        <div class="sub-title"></div>
+    </div>
+    <div class="content">
+         </div>
+    <div class="author">
+        <div class="signature">
+            <img src="" alt=""/>
+        </div>
+        <div class="name"></div>
+        <div class="tagline"></div>
+        
+    </div>
+</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+
+    </div>
+    <div style="text-align: center; ">
+        <form action="{% url 'contact' %}"><input type="submit" value="CONTACT US"/></form>
+    </div>
+   
+</article><!-- #post-## -->
+            </div>
+			        </div>
+    </div>
+</div><!-- /.content -->
+ 
+					<script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script>
+
+
+{% endblock %}

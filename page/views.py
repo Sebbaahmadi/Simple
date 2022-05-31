@@ -20,7 +20,7 @@ def contact(request):
         contact.Email=Email
         contact.Message=Message
         contact.save()
-        return HttpResponse("<h1> THANK YOU FOR CONTACT US <h1> ")
+        return HttpResponse("<h1> THANK YOU FOR CONTACTING US <h1> ")
     return render(request,'page/contact.html')
 
 

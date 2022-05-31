@@ -20,7 +20,7 @@
 <div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="false" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1489637781205 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="insight-team-member-2 row">
    
     <div class="col-md-6 member-image">
-		            <img src="/static/page/{{ x.cover }}" alt="{{ x.title }}"/>
+        <img src="{{ MEDIA_URL }}{{ x.cover.url }}" />
 		    </div>
     <div class="col-md-6 member-info">
 		            <h5 class="title nd-font pri-color">{{ x.date }}</h5>

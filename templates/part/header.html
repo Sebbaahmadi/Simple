@@ -368,7 +368,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
         </div>
     </header><!-- /.header -->
     <header class="header header-mobile">
-       
+        
         <div class="container">
             <div class="row row-xs-center">
                 <div class="col-xs-4 header-left">
@@ -385,6 +385,45 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
                 </a>
                             </div>
                 
+            </div>
+        </div>
+    </header>
+
+    <header class="header header-mobile">
+        <div class="top-search">
+            <div class="row row-xs-center">
+                <div class="col-md-12">
+                    <form role="search" method="get" class="search-form" action="{% url 'Home' %}">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+                    </label>
+                    <input type="submit" class="search-submit" value="Search" />
+                </form>            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-xs-center">
+                <div class="col-xs-4 header-left">
+                    <div id="open-left">
+                        <i class="ion-navicon"></i>
+                    </div>
+                </div>
+                <div class="col-xs-4 header-center">
+                                <a href="{% url 'Home' %}" rel="home" id="branding_logo_mobile">
+                    <img class="logo-image"
+                         src="{% static 'page/images/logo.png' %}"
+                         alt="simple"
+                         title="Simple Ice Cream"/>
+                </a>
+                            </div>
+                <div class="col-xs-4 header-right">
+                                        <div class="mini-cart-wrap open-cart">
+                            
+                                                        <div class="top-search-wrap">
+                            <div class="top-search-btn"></div>
+                        </div>
+                                </div>
             </div>
         </div>
     </header>

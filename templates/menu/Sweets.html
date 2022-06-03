@@ -6,6 +6,68 @@
         {% load static %}
         
         {% block content %}
+
+       
+<head>
+
+    <style>
+        .p1 {
+            color:rgb(15, 80, 80);
+            text-align: center;
+            font-size: 15px;
+            font-family:'Courier New', Courier, monospace
+        }
+        .p{
+            color:rgb(0, 0, 0);
+            text-align: center;
+            font-size: 20px;
+            font-family:'Courier New', Courier, monospace
+        }
+        .blur:hover {
+                 transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                    }
+                .blur{
+                 transition: transform .2s;
+                }
+
+                .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70.5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.9s;
+}
+.image__title {
+    font-size: 20px;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+    </style>
+</head>
+
         
         <div id="content" class="content">
             <div class="container">
@@ -20,31 +82,44 @@
             
             </a></figure>
         
-        
-            <div class="wpb_wrapper" style="background-color:white;">
+    
+          
+          <div class="wpb_text_column wpb_content_element " style="background-color: white;" >
+            <div class="wpb_wrapper">
                 <div class="cake-style text-center insight-title text-uppercase font-primary font-40 ofw-400 ofs-normal">
-          <h2 class="main-title">Waffles are just pancakes with abs</h2>
-          
-          </div>
-        <div class="insight-flower-button insight-align-center insight-flower-button-white"> <br> <br>
-            <h5> SHOP NOW </h5>
-            <br>
-          </div>
-          
+        <h2 class="main-title">Waffles are just pancakes with abs</h2>
+        </div>
+    <script id='custom-style-628efee014ae0' type='text/javascript'>(function($) {$(document).ready(function() {$("head").append("<style>#heading-628efee014acf{color: #333333;line-height: 48px;text-align: center;font-family:Raleway;font-weight:300;font-style:normal;font-weight: 400;text-transform: none;letter-spacing: 0.1em}</style>");});})(jQuery);</script><h2 id="heading-628efee014acf" class="vc_custom_heading nd-font ofs-italic vc_custom_1581382706597"></h2>    <div class="insight-flower-button insight-align-center insight-flower-button-white">
+            <a href="{% url 'meenu' %}" target=""
+               rel="">
+               SHOP NOW </a>
+        </div>
+    
             </div>
+        </div>
         
-        <div class="wp-block-group"><div class="wp-block-group__inner-container">
+        <div class="wp-block-group" style="background-color: white;"><div class="wp-block-group__inner-container" style="background-color: white;">
         <figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">
-            <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/2.JPG' %}" alt="" data-id="13971" data-full-url="{% static 'page/images/2.JPG' %}" class="wp-image-13971" srcset="{% static 'page/images/2.JPG' %} 1024w, {% static 'page/images/2.JPG' %} 300w, {% static 'page/images/2.JPG' %} 150w, {% static 'page/images/2.JPG' %} 768w, {% static 'page/images/2.JPG' %} 80w, {% static 'page/images/2.JPG' %} 420w, {% static 'page/images/2.JPG' %} 630w, {% static 'page/images/2.JPG' %} 100w, {% static 'page/images/2.JPG' %} 600w, {% static 'page/images/2.JPG' %} 96w, {% static 'page/images/2.JPG' %} 460w, {% static 'page/images/2.JPG' %}1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-            <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/3.JPG' %}" alt="" data-id="13966" data-full-url="{% static 'page/images/3.JPG' %}" class="wp-image-13966" srcset="{% static 'page/images/3.JPG' %} 1024w, {% static 'page/images/3.JPG' %} 300w, {% static 'page/images/3.JPG' %} 150w, {% static 'page/images/3.JPG' %} 768w, {% static 'page/images/3.JPG' %} 80w, {% static 'page/images/3.JPG' %} 420w, {% static 'page/images/3.JPG' %} 630w, {% static 'page/images/3.JPG' %} 100w, {% static 'page/images/3.JPG' %} 600w, {% static 'page/images/3.JPG' %} 96w, {% static 'page/images/3.JPG' %} 460w, {% static 'page/images/3.JPG' %} 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-            <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/4.JPG' %}" alt="" data-id="13958" data-full-url="{% static 'page/images/4.JPG' %}" class="wp-image-13958" srcset="{% static 'page/images/4.JPG' %} 1024w, {% static 'page/images/4.JPG' %} 300w, {% static 'page/images/4.JPG' %} 150w, {% static 'page/images/4.JPG' %} 768w, {% static 'page/images/4.JPG' %} 80w, {% static 'page/images/4.JPG' %} 420w, {% static 'page/images/4.JPG' %} 630w, {% static 'page/images/4.JPG' %} 100w, {% static 'page/images/4.JPG' %} 600w, {% static 'page/images/4.JPG' %} 96w, {% static 'page/images/4.JPG' %} 460w, {% static 'page/images/4.JPG' %} 1080w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
+            <li class="blocks-gallery-item"><figure><a href="#"><div><img class="blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/2.JPG' %}" alt="" data-id="13971" data-full-url="{% static 'page/images/2.JPG' %}" class="wp-image-13971" srcset="{% static 'page/images/2.JPG' %} 1024w, {% static 'page/images/2.JPG' %} 300w, {% static 'page/images/2.JPG' %} 150w, {% static 'page/images/2.JPG' %} 768w, {% static 'page/images/2.JPG' %} 80w, {% static 'page/images/2.JPG' %} 420w, {% static 'page/images/2.JPG' %} 630w, {% static 'page/images/2.JPG' %} 100w, {% static 'page/images/2.JPG' %} 600w, {% static 'page/images/2.JPG' %} 96w, {% static 'page/images/2.JPG' %} 460w, {% static 'page/images/2.JPG' %}1080w" sizes="(max-width: 1024px) 100vw, 1024px" />
+                <div class="image__overlay image__overlay--primary"><div class="image__title">Belgian Chocolate <br> Mini Pancake, <br> our homemade pancake <br> mix made with <br> our rich Belgian chocolate <br> and chocolate sauce</div></div>
+            </div><div> <p class="p"> Belgian Chocolate Mini Pancake </p> <p class="p1">  14 SAR </p></div>
+            </a></figure></li>
+            <li class="blocks-gallery-item"><figure><a href="#"><div><img class="blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/3.JPG' %}" alt="" data-id="13966" data-full-url="{% static 'page/images/3.JPG' %}" class="wp-image-13966" srcset="{% static 'page/images/3.JPG' %} 1024w, {% static 'page/images/3.JPG' %} 300w, {% static 'page/images/3.JPG' %} 150w, {% static 'page/images/3.JPG' %} 768w, {% static 'page/images/3.JPG' %} 80w, {% static 'page/images/3.JPG' %} 420w, {% static 'page/images/3.JPG' %} 630w, {% static 'page/images/3.JPG' %} 100w, {% static 'page/images/3.JPG' %} 600w, {% static 'page/images/3.JPG' %} 96w, {% static 'page/images/3.JPG' %} 460w, {% static 'page/images/3.JPG' %} 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />
+                <div class="image__overlay image__overlay--primary"><div class="image__title">Pistachio Mini Pancake, <br> our homemade pancake mix <br> topped off with our <br> delicious sauces on top </div></div>
+            </div><div> <p class="p"> Pistachio Mini Pancake </p> <p class="p1"> <br> 17 SAR </p></div>
+            </a></figure></li>
+            <li class="blocks-gallery-item"><figure><a href="#"><div><img class="blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/4.JPG' %}" alt="" data-id="13958" data-full-url="{% static 'page/images/4.JPG' %}" class="wp-image-13958" srcset="{% static 'page/images/4.JPG' %} 1024w, {% static 'page/images/4.JPG' %} 300w, {% static 'page/images/4.JPG' %} 150w, {% static 'page/images/4.JPG' %} 768w, {% static 'page/images/4.JPG' %} 80w, {% static 'page/images/4.JPG' %} 420w, {% static 'page/images/4.JPG' %} 630w, {% static 'page/images/4.JPG' %} 100w, {% static 'page/images/4.JPG' %} 600w, {% static 'page/images/4.JPG' %} 96w, {% static 'page/images/4.JPG' %} 460w, {% static 'page/images/4.JPG' %} 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />
+                <div class="image__overlay image__overlay--primary"><div class="image__title">Belgian Chocolate <br> Mini Waffle, <br> our homemade waffle <br> mix made with <br> our rich Belgian chocolate <br> and chocolate sauce</div></div>
+            </div><div> <p class="p"> Belgian Chocolate Mini Waffle</p> <p class="p1"> 19 SAR </p></div>
+            </a></figure></li>
             
             </ul>
         </figure>
                 
                
             </div></div>
-        
+        <br>
+        <br>
         
             <h5 class="has-text-align-center"><strong>Freshly made with our love and passion for dessert </strong></h5>
         

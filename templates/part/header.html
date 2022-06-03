@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="profile" href="https://gmpg.org/xfn/11">
 						<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
-			<title>sSimple</title>
+			<title>Simple</title>
 
 
     <style>
@@ -37,6 +37,11 @@
         body{
             background-image: url("{% static 'page/images/M.jpeg' %}")
         }
+
+        a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+}
     </style>
 
 
@@ -103,7 +108,7 @@ img.emoji {
 <link rel='stylesheet' id='woosw-feather-css'  href='https://dotscupcakes.com/wp-content/plugins/woo-smart-wishlist/assets/libs/feather/feather.css?ver=5.6.8' type='text/css' media='all' />
 <link rel='stylesheet' id='woosw-frontend-css'  href='https://dotscupcakes.com/wp-content/plugins/woo-smart-wishlist/assets/css/frontend.css?ver=5.6.8' type='text/css' media='all' />
 <style id='woosw-frontend-inline-css' type='text/css'>
-.woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-notice { background-color: #000000; } .woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-content-bot-inner .woosw-page a:hover, .woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-content-bot-inner .woosw-continue:hover { color: #000000; } 
+.woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-notice { background-color: #000000; } .woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-content-bot-inner .woosw-page a:hover, .woosw-area .woosw-inner .woosw-content .woosw-content-bot .woosw-content-bot-inner .woosw-continue:hover { color:teal; } 
 </style>
 <link rel='stylesheet' id='jquery-colorbox-css'  href='https://dotscupcakes.com/wp-content/plugins/yith-woocommerce-compare/assets/css/colorbox.css?ver=5.6.8' type='text/css' media='all' />
 <link rel='stylesheet' id='yith_wccl_frontend-css'  href='https://dotscupcakes.com/wp-content/plugins/yith-woocommerce-product-add-ons/assets/css/yith-wccl.css?ver=1.5.23.3' type='text/css' media='all' />
@@ -309,7 +314,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   font-display: swap;
   src: url(https://dotscupcakes.com/wp-content/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qO0g.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1480502329904{padding-top: 50px !important;padding-bottom: 120px !important;}.vc_custom_1581493971320{padding-top: 80px !important;padding-bottom: 80px !important;background-color: #ffedf0 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1581496892312{margin-top: -130px !important;padding-top: 50px !important;}.vc_custom_1498246714546{padding-top: 60px !important;padding-bottom: 44px !important;background-color: #ffffff !important;border-radius: 1px !important;}.vc_custom_1581382706597{margin-top: 20px !important;margin-bottom: 40px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1480502329904{padding-top: 50px !important;padding-bottom: 120px !important;}.vc_custom_1581493971320{padding-top: 80px !important;padding-bottom: 80px !important;background-color: #ffedf0 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1581496892312{margin-top: -130px !important;padding-top: 50px !important;}.vc_custom_1498246714546{padding-top: 60px !important;padding-bottom: 44px !important;background-color: #ffffff !important;border-radius: 1px !important;}.vc_custom_1581382706597{margin-top: 20px !important;margin-bottom: 40px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }
+
+</style></noscript></head>
 
 <body data-rsssl=1 class="home page-template-default page page-id-872 theme-tm-organie woocommerce-no-js yith-wapo-frontend group-blog page--fullwidth page-private--default no-padding tm-organie wpb-js-composer js-comp-ver-6.5.0 vc_responsive">
 
@@ -324,7 +331,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
             <div class="row row-xs-center">
                 <div class="col-md-12 header-logo">
 					            <a href="{% url 'Home' %}" rel="home" id="branding_logo">
-                <img height=600 , width=200 class="logo-image branding_logo_image" src="{% static 'page/images/logo.png' %}"
+                <img height=600 , width=150 class="logo-image branding_logo_image" src="{% static 'page/images/logo.png' %}"
 					data-normal="{% static 'page/images/logo.png' %}"  alt="simple"
                      title="simple"/>
             </a>
@@ -373,17 +380,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
                                 <a href="{% url 'Home' %}" rel="home" id="branding_logo_mobile">
                     <img class="logo-image"
                          src="{% static 'page/images/logo.png' %}"
-                         alt="Cupcakes Baked Fresh Daily"
-                         title="Dots Cupcakes | Baked Fresh Daily"/>
+                         alt="simple"
+                         title="simple"/>
                 </a>
                             </div>
-                <div class="col-xs-4 header-right">
-                                        <div class="mini-cart-wrap open-cart">
-                            <div class="mini-cart"><div class="mini-cart-icon" data-count="0"><i class="ion-ios-cart-outline"></i></div><div class="mini-cart-text">My Cart<div class="mini-cart-total nd-font"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></div></div></div>                    </div>
-                                                        <div class="top-search-wrap">
-                            <div class="top-search-btn"></div>
-                        </div>
-                                </div>
+                
             </div>
         </div>
     </header>

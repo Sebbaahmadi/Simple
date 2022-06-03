@@ -7,6 +7,66 @@
 
 {% block content %}
 
+<head>
+
+    <style>
+        .p1 {
+            color:rgb(15, 80, 80);
+            text-align: center;
+            font-size: 15px;
+            font-family:'Courier New', Courier, monospace
+        }
+        .p{
+            color:rgb(0, 0, 0);
+            text-align: center;
+            font-size: 20px;
+            font-family:'Courier New', Courier, monospace
+        }
+        .blur:hover {
+                 transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                    }
+                .blur{
+                 transition: transform .2s;
+                }
+
+                .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.9s;
+}
+.image__title {
+    font-size: 20px;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+    </style>
+</head>
+
 <div id="content" class="content">
     <div class="container">
         <div id="primary" class="content-area row">
@@ -21,32 +81,72 @@
     </a></figure>
 
 
-    <div class="wpb_wrapper" style="background-color:white;">
+  <div class="wpb_text_column wpb_content_element " style="background-color: white;" >
+    <div class="wpb_wrapper">
         <div class="cake-style text-center insight-title text-uppercase font-primary font-40 ofw-400 ofs-normal">
-  <h2 class="main-title">Always save room for Ice Cream</h2>
-  
-  </div>
-<div class="insight-flower-button insight-align-center insight-flower-button-white"> <br> <br>
-    <h5> SHOP NOW </h5>
-    <br>
-  </div>
-  
-    </div>
+<h2 class="main-title">Always save room for Ice Cream</h2>
+</div>
+<script id='custom-style-628efee014ae0' type='text/javascript'>(function($) {$(document).ready(function() {$("head").append("<style>#heading-628efee014acf{color: #333333;line-height: 48px;text-align: center;font-family:Raleway;font-weight:300;font-style:normal;font-weight: 400;text-transform: none;letter-spacing: 0.1em}</style>");});})(jQuery);</script><h2 id="heading-628efee014acf" class="vc_custom_heading nd-font ofs-italic vc_custom_1581382706597"></h2>    <div class="insight-flower-button insight-align-center insight-flower-button-white">
+    <a href="{% url 'meenu' %}" target=""
+       rel="">
+       SHOP NOW </a>
+</div>
 
-<div class="wp-block-group"><div class="wp-block-group__inner-container">
+    </div>
+</div>
+
+<div class="wp-block-group" style="background-color: white;"><div class="wp-block-group__inner-container" style="background-color: white;">
 <figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/11.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/12.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/13.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/14.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/15.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/16.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/17.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/18.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/19.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/20.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/21.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="#"><img loading="lazy" width="1024" height="1024" src="{% static 'page/images/22.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"> 
+        <div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/11.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+             <div class="image__overlay image__overlay--primary"><div class="image__title">Vanilla ice cream stuffed <br> pecans with caramel sauce</div></div>
+    </div><div> <p class="p"> Ice Cream Mix </p> <p class="p1"> Small: 10 SAR <br> Large: 19 SAR </p></div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/12.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Vanilla ice cream  <br> layers of brownies pieces</div></div>
+    </div><div> <p class="p"> Ice Cream Parfait </p> <p class="p1"> Small: 10 SAR <br> Large: 19 SAR </p></div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/13.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /> 
+        <div class="image__overlay image__overlay--primary"><div class="image__title"> Rich brownie swirled through <br>vanilla ice cream</div></div>
+    </div><div> <p class="p"> Ice Cream Brownie </p> <p class="p1"> 19 SAR </p></div>
+</a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/14.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title"> Toffee ice cream,<br> frozen dessert made with <br> crunchy pieces of <br> golden-browned toffee. </div></div>
+    </div><div> <p class="p">  Toffee </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p></div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/15.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title"> Mango ice cream, <br> frozen dessert made with <br> swirls of fresh mangos</div></div>
+    </div><div><p class="p"> Mango </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p> </div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/16.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Chocolate ice cream,<br> frozen dessert made with <br> blendings of cocoa powder <br> and rich chocolate</div></div>
+    </div><div> <p class="p">  Chocolate </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p> </div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/17.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Oreo ice cream, <br> frozen dessert made with <br> chunks and crumbles of <br> delicious Oreo bites</div></div>
+    </div><div> <p class="p">  Oreo </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p></div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/18.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Peanuts ice cream, <br> frozen dessert made with <br> Rich, creamy peanut butter,<br> and sweet</div></div>
+    </div><div> <p class="p">  Peanuts </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p> </div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/19.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Strawberry Cheesecake <br> ice cream, <br> frozen dessert made with <br> with freshly picked <br> strawberry and <br> cheesecake flavor</div></div>
+    </div><div> <p class="p">  Strawberry Cheesecake </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p> </div> 
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/20.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title"> Lotus ice cream, <br> frozen dessert made with <br> crunchy Lotus Biscoff <br> cookies and cookie butter</div></div>
+    </div><div> <p class="p">  Lotus </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p>  </div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/21.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title">Vanilla ice cream, <br> frozen dessert made with <br> milk, cream, sugar, <br> and vanilla flavoring <br> from vanilla seeds, <br> pure vanilla extract</div></div>
+    </div><div> <p class="p">  Vanilla </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p></div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="#"><div><img class= "blur" loading="lazy" width="1024" height="1024" src="{% static 'page/images/22.JPG' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" />
+        <div class="image__overlay image__overlay--primary"><div class="image__title"> Pistachio ice cream, <br> frozen dessert made with <br> pistachio nut with a <br> rich pistachio flavor</div></div>
+    </div><div> <p class="p"> Pistachio </p> <p class="p1"> One Scoop: 9SAR <br> Two Scoops: 16 SAR </p></div>
+    </a></figure></li>
                 
             
        </ul>

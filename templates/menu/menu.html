@@ -57,50 +57,45 @@
 .blur{
   transition: transform .2s;
 }
-
-
-.img-wrapper:hover > img.gray {
-  filter: grayscale(1);
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: Quicksand;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.9s;
+}
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.img-wrapper:hover > img.zoom {
-  transform: scale(1.1);
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
 }
 
-.img-wrapper > .content.fade {
-  opacity: 0;
+.image__overlay:hover {
+    opacity: 1;
 }
-.img-wrapper:hover > .content.fade {
-  opacity: 1;
-}
-
-.img-wrapper > .content.slide-left {
-  transform: translateX(-100%);
-}
-.img-wrapper:hover > .content.slide-left {
-  transform: translateX(0);
+.image__overlay:hover > * {
+    transform: translateY(0);
 }
 
-.img-wrapper > .content.slide-right {
-  transform: translateX(100%);
-}
-.img-wrapper:hover > .content.slide-right {
-  transform: translateX(0);
-}
 
-.img-wrapper > .content.slide-down {
-  transform: translateY(-100%);
-}
-.img-wrapper:hover > .content.slide-down {
-  transform: translateY(0);
-}
 
-.img-wrapper > .content.slide-up {
-  transform: translateY(100%);
-}
-.img-wrapper:hover > .content.slide-up {
-  transform: translateY(0);
-}
 
     </style>
 
@@ -126,7 +121,7 @@
 
 </div>
 <script id='custom-style-628efee014ae0' type='text/javascript'>(function($) {$(document).ready(function() {$("head").append("<style>#heading-628efee014acf{color: #333333;line-height: 48px;text-align: center;font-family:Raleway;font-weight:300;font-style:normal;font-weight: 400;text-transform: none;letter-spacing: 0.1em}</style>");});})(jQuery);</script><h2 id="heading-628efee014acf" class="vc_custom_heading nd-font ofs-italic vc_custom_1581382706597">You dream it, we create it</h2>    <div class="insight-flower-button insight-align-center insight-flower-button-white">
-  <h5> SHOP NOW </h5>
+  
   <br>
   
 </div>
@@ -137,9 +132,14 @@
 
 <div class="grid"><div class="img-wrapper" >
 <figure class="wp-block-gallery columns-3 is-cropped"><ul class="blocks-gallery-grid">
-    <li class="blocks-gallery-item"><figure><a href="{% url 'IceCream' %}"><img class="zoom blur"  width="1024" height="1024" src="{% static 'page/images/23.png' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="{% url 'Sweets' %}"><img class="blur" width="1024" height="1024" src="{% static 'page/images/6.PNG' %}" alt="" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
-    <li class="blocks-gallery-item"><figure><a href="{% url 'PartyBox' %}"><img class="zoom blur"width="1024" height="1024" src="{% static 'page/images/8.JPG' %}" alt="" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="{% url 'IceCream' %}"><img class="zoom blur"  width="1024" height="1024" src="{% static 'page/images/23.png' %}" alt=""  sizes="(max-width: 1024px) 100vw, 1024px">
+      <div class="image__overlay image__overlay--primary">   <div class="image__title">Ice Cream</div> </div>
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="{% url 'Sweets' %}"><img class="blur" width="1024" height="1024" src="{% static 'page/images/6.PNG' %}" alt="" sizes="(max-width: 1024px) 100vw, 1024px">
+      <div class="image__overlay image__overlay--primary">   <div class="image__title">Waffles and Pancakes</div> </div> 
+    </a></figure></li>
+    <li class="blocks-gallery-item"><figure><a href="{% url 'PartyBox' %}"><img class="zoom blur"width="1024" height="1024" src="{% static 'page/images/8.JPG' %}" alt="" sizes="(max-width: 1024px) 100vw, 1024px">
+      <div class="image__overlay image__overlay--primary">   <div class="image__title">Party Boxes</div> </div></a></figure></li>
      
         
    </ul></figure>    

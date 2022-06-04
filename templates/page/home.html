@@ -4,9 +4,9 @@
 {% load static %}
 
 {% block content %}
-
+<head></head>
 <div id="content" class="content">
-    <div class="container">
+    
         <div id="primary" class="content-area row">
 			            <div
                     class="col-md-12">
@@ -19,7 +19,7 @@
 			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img width="1500" height="600" src="{% static 'page/images/IMG_7199.jpg' %}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{% static 'page/images/IMG_7199.jpg' %} 1350w, {% static 'page/images/IMG_7199.jpg' %} 300w" sizes="(max-width: 1350px) 100vw, 1350px" /></div>
 		</figure>
 	</div>
-</div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid relative-visible"><div class="static-visible wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+</div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid relative-visible"><div class="static-visible wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<div class="vc_custom_1581496892312 insight-about3">
@@ -41,7 +41,7 @@
 			                <img src="{% static 'page/images/home.jpg' %}" width=700/>
 			            <div class="about3-quote" style="text-align: center;">
                 <div class="about3-quote-text nd-font" style="background-color: white; text-align: right;">
-					We invite you to visit our <strong>simple ice cream shop</strong> in Madinah, you will freshen up all your senses and feel delighted with our deliciously wonderful various sweets. Have an unforgettable special experience with us at simple!  </div>
+					We invite you to visit our <strong>simple ice cream shop</strong> in Madinah, you will freshen up all your senses and feel delighted with our deliciously wonderful various sweets. Have an unforgettable special experience with us at simple!      </div>
                 <div class="image3">
 					                </div>
 								
@@ -87,5 +87,27 @@
 			        </div>
     </div>
 </div><!-- /.content -->
+
+<script type="text/javascript">
+
+    (function(d, m){
+
+        var kommunicateSettings =
+
+            {"appId":"27695b129aeb276a0f4087bd240ed074b","popupWidget":true,"automaticChatOpenOnNavigation":true};
+
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+
+        window.kommunicate = m; m._globals = kommunicateSettings;
+
+    })(document, window.kommunicate || {});
+
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+
+</script>
     
 {% endblock %}

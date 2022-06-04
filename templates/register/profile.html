@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+<head>
+<style>
+
+h2 {
+            color:rgb(15, 80, 80);
+            text-align: center;
+            font-size: 30px;
+            font-family:'Courier New', Courier, monospace
+}
+</style>
+
+</head>
+ <br><br><br><br><br>
+
+<div class="eltdf-row-grid-section-wrapper "><div class="eltdf-row-grid-section"><div class="vc_row wpb_row vc_row-fluid vc_custom_1489480763916"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-4"><div class="vc_column-inner vc_custom_1489070764478"><div class="wpb_wrapper"><div class="eltdf-elements-holder eltdf-one-column eltdf-responsive-mode-768"><div class="eltdf-eh-item " data-item-class="eltdf-eh-custom-488456" data-1024-1280="69px 2% 0px 1%" data-768-1024="0px 0% 140px 1%" data-480="0px 0% 78px 7%">
+    <div class="eltdf-eh-item-inner">
+    <div class="eltdf-eh-item-content eltdf-eh-custom-488456" style="padding: 85px 4% 0px 0%">
+    <div class="eltdf-section-title-holder  ">
+    <h2 class="eltdf-st-title " style="color: #030303"></h2>
+    
+    </div><div class="vc_empty_space" style="height: 40px"><span class="vc_empty_space_inner"></span></div>
+        <div class="wpb_text_column wpb_content_element " style="background-color: white; padding: 30px;" >
+            <div class="wpb_wrapper">
+                <div class="cake-style text-center insight-title text-uppercase font-primary font-40 ofw-400 ofs-normal">
+        <h2 class="main-title">Welcome {{user.first_name}}</h2>
+        </div>
+    <script id='custom-style-628efee014ae0' type='text/javascript'>(function($) {$(document).ready(function() {$("head").append("<style>#heading-628efee014acf{color: #333333;line-height: 48px;text-align: center;font-family:Raleway;font-weight:300;font-style:normal;font-weight: 400;text-transform: none;letter-spacing: 0.1em}</style>");});})(jQuery);</script><h2 id="heading-628efee014acf" class="vc_custom_heading nd-font ofs-italic vc_custom_1581382706597">Enjoy Your Shopping</h2>    <div class="insight-flower-button insight-align-center insight-flower-button-white">
+            <a href="{% url 'meenu' %}" target=""
+               rel="">
+               SHOP NOW </a>
+        </div>
+    
+            </div>
+        </div>
+    </a> </div>
+    </div>
+    </div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-8"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="eltdf-elements-holder eltdf-one-column eltdf-responsive-mode-768"><div class="eltdf-eh-item " data-item-class="eltdf-eh-custom-404181" data-1024-1280="0px 2% 130px 7.3%" data-768-1024="7px 2% 130px 0.3% " data-600-768="0px 9% 117px 0%" data-480="0px 0% 63px 0.3%">
+    <div class="eltdf-eh-item-inner">
+    <div class="eltdf-eh-item-content eltdf-eh-custom-404181" style="padding: 0px 0% 135px 7.3%">
+    <div class="wpb_single_image wpb_content_element vc_align_left">
+    <figure class="wpb_wrapper vc_figure">
+    <div class="vc_single_image-wrapper   vc_box_border_grey" ><img width="780" height="400" src="{% static 'page/images/home.jpg' %}" class="vc_single_image-img attachment-full" alt="a" srcset="{% static 'page/images/home.jpg' %} 780w, {% static 'page/images/home.jpg' %} 300w, {% static 'page/images/home.jpg' %} 768w" sizes="(max-width: 780px) 100vw, 780px" /></div>
+    </figure>
+    </div>
+    </div>
+    </div>
+    </div></div></div></div></div></div></div></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+    </div> 
+                        
+
+{% endblock %}
